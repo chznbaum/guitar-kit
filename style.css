@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body {
+  background-color: rgba(0,0,0,0.7);
+  background-image: url('images/guitar.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: rgba(0,0,0,0.875);
+  font-family: 'Noto Sans';
+  min-height: 95vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: rgba(250,160,160,.875);
+}
+
+header, footer {
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 0 5px #000;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.key {
+  width: 100px;
+  background-color: rgba(0,0,0,0.4);
+  border: solid 2px rgba(0,0,0,0.6);
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 0 5px #000;
+  border-radius: .25em;
+  font-size: 2em;
+  transition: all 0.7s;
+}
+
+.key small {
+  font-size: .6em;
+  color: rgba(250,160,160,.875);
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: rgba(250,160,160,.875);
+  box-shadow: 0 0 10px rgba(250,160,160,.875);
+}
